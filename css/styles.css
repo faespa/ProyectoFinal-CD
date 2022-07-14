@@ -1,0 +1,247 @@
+:root {
+    --white: #ffffff;
+    --black: #333333;
+    --col_title: #ffff00;
+    --col_titlebi: #ff0000;
+    
+    --nav_hover: #ffdead;
+
+    --primary: #ffc107;
+    --secundary: #0097a7;
+    --gray: #757575;
+
+    --font-title: 'Lobster', cursive;
+    --font-principal: 'Roboto', sans-serif; 
+    --font-serif: 'Ibarra Real Nova', serif;
+}
+
+/*******************
+1rem - 10px
+********************/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+}
+/* box sizing Paul Irish */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--font-principal);
+/*    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;   */
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    font-size: 1.6rem;      
+}
+h1,h2,h3,p
+{
+    margin: 0;
+}
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+h3 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/******************************
+*******************************/
+.site-header {
+    font-family: var(--font-principal);
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.site-header a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+}
+.site-header a:hover {
+    text-decoration: none;
+    color:  var(--primary);    
+    transition: 0.3s;
+}
+
+.logo {
+    font-family: var(--font-title);
+    padding-left: 15rem;
+    
+}
+.logo a {   
+    color: var(--nav_hover); 
+    font-size: 4rem;
+}
+.logo a:hover {
+    color: var(--col_title);
+    transition: 0.3s;
+}
+.logo a span
+{
+    text-transform: uppercase;
+    color: var(--col_titlebi);
+}
+
+.redes a {
+    padding-right: 1.5rem;
+}
+.redes a:hover {
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+.navegacion a {
+    padding-right: 10rem;
+}
+
+/********* Hero **********/
+.hero {
+    background-image: url(../img/hero.jpg);
+    height: 100vh;
+    background-size: cover; 
+    display: flex;
+}
+
+/********* Services **********/
+.sec-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.sec-container {
+    background-color: var(--black);
+    border-radius: 2rem;
+    -webkit-box-shadow: 14px 48px 108px -29px rgba(0,0,0,0.63);
+    -moz-box-shadow: 14px 48px 108px -29px rgba(0,0,0,0.63);
+    box-shadow: 14px 48px 108px -29px rgba(0,0,0,0.63);
+    width: 70%;
+    align-items: center;
+    padding: 1rem;
+}
+.sec-services {
+    text-align: center;    
+}
+.sec-services h2 {
+    color: var(--white);
+    margin: 1rem 0;
+    
+}
+.sec-services h3{
+    color: var(--nav_hover);
+    margin: 0rem 0;  
+}
+.sec-services p{
+    color: var(--white);
+    text-align: left;
+
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-container article{
+    padding: 0 2rem;
+
+}
+.services-container article h3{
+    padding: 2rem;
+
+}
+/****** Inputs ******/
+.inputs {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.inputs__container {
+    width: 90%;
+    display: flex;
+    
+}
+.inputs__container article {
+    margin: 2rem;
+}
+.inputs__container h2,h3 {
+    color: var(--nav_hover);
+    
+}
+.inputs__container h2 {
+    text-align: center;  
+}
+
+
+.inputs__blog {
+    background-image: linear-gradient(120deg, var(--nav_hover ) 0%, #ebedee 100%);
+    border-radius: 3rem;
+    padding: 2rem;
+    
+}
+.inputs__blog section {
+    margin-bottom: 3rem;
+}
+.inputs__blog h2,h3,p {
+    color: var(--black);    
+}
+.inputs__blog h2{
+    text-align: center;
+    margin: 1rem;
+}
+
+.inputs__evidence p {
+    color: var(--white);
+}
+.inputs__evidence img{
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+.inputs__evidence .cat{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/***** Footer ****/
+.site-footer {
+    font-family: var(--font-principal);
+    background-color: var(--black);
+    text-align: center;
+    padding-top: 1rem;
+}
+.site-footer a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 3rem;
+}
+.site-footer a:hover {
+    text-decoration: none;
+    color:  var(--primary);    
+    transition: 0.3s;
+}
+.site-footer p {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.footer-logo {
+    font-family: var(--font-title);
+    padding: 0;
+}
+.footer-logo a {   
+    color: var(--nav_hover); 
+    font-size: 6rem;
+}
+.site-footer .copyright {
+    margin: 0;
+}

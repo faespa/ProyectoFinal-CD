@@ -6,71 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8ecc71c098.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Lobster&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
+
 <body>
-    <header>
-        <h1>AutoRines</h1>
-        <img src="https://picsum.photos/50" alt="">
-        <nav>
-            <ul>
-                <li><a href="Sections/index.html">Inicio</a></li>
-                <li><a href="Sections/nosotros.html">Nosotros</a></li>
-                <li><a href="Sections/servicios.html">Servicios</a></li>
-                <li><a href="Sections/galeria.html">Galeria</a></li>
-                <li><a href="Sections/contacto.html">Contacto</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="logo header-logo">
+            <a href="index.html">Auto<span>Rines</span></a>
+        </div>
+
+        <nav class="navegacion">
+            <a href="Sections/nosotros.html">Nosotros</a>
+            <a href="Sections/servicios.html">Servicios</a>
+            <a href="Sections/galeria.html">Galeria</a>
+            <a href="Sections/contacto.html">Contacto</a>
         </nav>
+
+        <div class="redes header-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </header>
 
+    <div class="hero">
+        <div class="contenedor-hero">
+        <!--   <h1 class="title">Auto<span>Rines</span> </h1> --> 
+        </div>
+    </div>
+
     <main>
-        <section>
-            <h2>Servicios</h2>
-            <article>
-                <h3>Instalacion</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
-                    quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae suscipit. Et
-                    quos adipisci libero.</p>
-            </article>
+        <section class="sec-services">
+            <div class="sec-container">
+                <h2>Servicios</h2>
+                <div class="services-container">
+                    <article>
+                        <h3>Instalacion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
+                            quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae
+                            suscipit. Et
+                            quos adipisci libero.</p>
+                    </article>
 
-            <article>
-                <h3>Alineacion y Balanceo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
-                    quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae suscipit. Et
-                    quos adipisci libero.</p>
-            </article>
+                    <article>
+                        <h3>Alineacion y Balanceo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
+                            quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae
+                            suscipit. Et
+                            quos adipisci libero.</p>
+                    </article>
 
-            <article>
-                <h3>Rectificacion</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
-                    quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae suscipit. Et
-                    quos adipisci libero.</p>
-            </article>
+                    <article>
+                        <h3>Rectificacion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
+                            quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae
+                            suscipit. Et
+                            quos adipisci libero.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Blog</h2>
-            <article>
-                <div>Entrada 1</div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum iure tenetur quasi dicta ut
-                    voluptatibus temporibus. Possimus, a cumque aliquid magnam accusamus officiis labore, delectus,
-                    eveniet
-                    porro ipsa doloribus.</p>
-            </article>
-        </section>
+        <section class="inputs">
+            <div class="inputs__container">
+                <article class="inputs__blog">
+                    <h2>Blog</h2>
+                    <section>
+                        <h3>Entrada 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum iure tenetur quasi
+                            dicta
+                            ut
+                            voluptatibus temporibus. Possimus, a cumque aliquid magnam accusamus officiis labore,
+                            delectus,
+                            eveniet
+                            porro ipsa doloribus.</p>
+                    </section>
+                    <section>
+                        <h3>Entrada 2</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum iure tenetur quasi
+                            dicta
+                            ut
+                            voluptatibus temporibus. Possimus, a cumque aliquid magnam accusamus officiis labore,
+                            delectus,
+                            eveniet
+                            porro ipsa doloribus.</p>
+                    </section>
+                </article>
 
-        <section>
-            <h2>Nuestros Trabajos</h2>
-            <img src="https://picsum.photos/200" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat porro nulla nihil repellendus
-                vel voluptates a rem ab. Odit sequi corrupti voluptas voluptatem eligendi perspiciatis in unde doloribus
-                fuga!</p>
+                <article class="inputs__evidence">
+                    <h2>Nuestros Trabajos</h2>
+                    <div class="cat">
+                        <img src="img/mohsen-ameri-NKgGXXDwNDw-unsplash.jpg"our work">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat porro nulla nihil
+                        repellendus
+                        vel voluptates a rem ab. Odit sequi corrupti voluptas voluptatem eligendi perspiciatis in unde
+                        doloribus
+                        fuga!</p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <img src="https://picsum.photos/50" alt="">
-        <p>Autorines tel: 320 9043983</p>
+    <footer class="site-footer">
+
+        <div class="redes footer-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="logo footer-logo">
+            <a href="index.html">Auto<span>Rines</span></a>
+        </div>
+        <div class="copyright">
+            <p>todos los derechos reservados <span><i class="fa-regular fa-registered"></i></span></p>
+        </div>
     </footer>
 </body>
+
 </html>
