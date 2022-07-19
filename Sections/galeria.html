@@ -5,43 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8ecc71c098.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Lobster&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link href="../css/styles.css" rel="stylesheet"> 
     <title>Gallery</title>
+</head>
 </head>
 
 <body>
 
-    <header>
-        <h1>AutoRines</h1>
-        <img src="https://picsum.photos/50" alt="">
-        <nav>
+    <header class="site-header"> <!--Inicio Header-->
+        <div class="logo header-logo">
+            <a href="../index.html">Auto<span>Rines</span></a>
+        </div>
+
+        <nav class="navegacion">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
+        <div class="redes header-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header> <!--Final Header-->
+
+    <main class="main-gallery"> <!--Main-->
         <h2>Galeria</h2>
-        <section>
-            <img src="https://picsum.photos/300" alt="">
-            <img src="https://picsum.photos/200" alt="">
-            <img src="https://picsum.photos/100" alt="">
-            <img src="https://picsum.photos/100" alt="">
-            <img src="https://picsum.photos/100/300" alt="">
-            <img src="https://picsum.photos/100/300" alt="">
-            <img src="https://picsum.photos/200/300" alt="">
-            <img src="https://picsum.photos/300/100" alt="">
-        </section>
-    </main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum hic quo cupiditate, sunt dolores aliquam itaque maxime dolorem neque beatae labore repudiandae! Corporis nobis ad libero esse, voluptas ipsam non.</p>
 
-    <footer>
-        <img src="https://picsum.photos/50" alt="">
-        <p>Autorines Ibague R tel: 320 9043983</p>
-    </footer>
+        <section> <!--section-->
+            <img src="https://picsum.photos/300" alt="">
+            <img src="https://picsum.photos/300" alt="">
+            <img src="https://picsum.photos/165/300" alt="">
+            <img src="https://picsum.photos/165/300" alt="">
+            <img src="https://picsum.photos/605/600" alt="">
+            <img src="https://picsum.photos/335/600" alt="">
+            <img src="https://picsum.photos/165/300" alt="">
+            <img src="https://picsum.photos/775/300" alt="">
+        </section> <!--End Section-->
+    </main> <!--End Main-->
+
+    <footer class="site-footer"> <!--Footer-->
+        <div class="redes footer-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="logo footer-logo">
+            <a href="index.html">Auto<span>Rines</span></a>
+        </div>
+        <div class="copyright">
+            <p>todos los derechos reservados <span><i class="fa-regular fa-registered"></i></span></p>
+        </div>
+    </footer> <!--End Footer-->
 
 </body>
 

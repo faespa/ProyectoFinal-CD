@@ -5,34 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8ecc71c098.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Lobster&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>Services</title> 
 </head>
 
 <body>
-    <header>
-        <h1>AutoRines</h1>
-        <img src="https://picsum.photos/50" alt="">
-        <nav>
+    <header class="site-header"> <!--Inicio Header-->
+        <div class="logo header-logo">
+            <a href="../index.html">Auto<span>Rines</span></a>
+        </div>
+
+        <nav class="navegacion">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
+        <div class="redes header-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header> <!--Final Header-->
+
+    <main class="main-sections"><!--Inicio Main-->
         <h2>servicios</h2>
-        <img src="https://picsum.photos/200" alt="">
+        <img src="https://picsum.photos/800/200" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda animi unde quisquam architecto nam. Et
             eaque praesentium nemo voluptate voluptatum! Odio error veritatis asperiores nesciunt temporibus perferendis
             quia hic saepe.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nesciunt quae quasi accusamus, quaerat sequi corrupti beatae inventore porro sint iure dignissimos! Quo aut similique reiciendis officia sequi dignissimos sit.</p>
         <section>
             <article>
                 <h3>Instalacion</h3>
-                <img src="https://picsum.photos/200" alt="">
+                <img src="https://picsum.photos/800/200" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
                     quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae suscipit. Et
                     quos adipisci libero.</p>
@@ -40,7 +57,7 @@
 
             <article>
                 <h3>Alineacion y Balanceo</h3>
-                <img src="https://picsum.photos/200" alt="">
+                <img src="https://picsum.photos/800/200" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
                     quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae suscipit. Et
                     quos adipisci libero.</p>
@@ -48,15 +65,15 @@
 
             <article>
                 <h3>Rectificacion</h3>
-                <img src="https://picsum.photos/200" alt="">
+                <img src="https://picsum.photos/800/200" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
                     quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae suscipit. Et
                     quos adipisci libero.</p>
             </article>
         </section>
 
-        <section>
-            <h2>referencias mas buscadas</h2>
+        <section class="section-table">  <!--InitTable-->
+            <h2 >referencias mas buscadas</h2>
             <article>
                 <table>
                     <tr>
@@ -96,13 +113,23 @@
                     </tr>
                 </table>
             </article>
-        </section>
-    </main>
+        </section><!--End Table-->
+    </main> <!--Final Main-->
 
-    <footer>
-        <img src="https://picsum.photos/50" alt="">
-        <p>Autorines Ibague R tel: 320 9043983</p>
-    </footer>
+    <footer class="site-footer"> <!--Inicio Footer-->
+        <div class="redes footer-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="logo footer-logo">
+            <a href="index.html">Auto<span>Rines</span></a>
+        </div>
+        <div class="copyright">
+            <p>todos los derechos reservados <span><i class="fa-regular fa-registered"></i></span></p>
+        </div>
+    </footer> <!--fin Footer-->
 </body>
 
 </html>
