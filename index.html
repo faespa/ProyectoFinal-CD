@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Lobster&family=Roboto:wght@100;300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
     <title>Proyecto</title>
@@ -22,13 +22,14 @@
 
 
 <body>
-    <header class="site-header header"><!--Header-->
+    <header class="site-header header">
+        <!--Header-->
 
-        <div class="logo header-logo">
-            <a href="index.html">Auto<span>Rines</span></a>
-        </div>
         <nav class="navegacion">
             <ul>
+                <div class="logo header-logo">
+                    <li><a href="index.html">Auto<span>Rines</span></a></li>
+                </div>
                 <li><a href="sections/nosotros.html">Nosotros</a></li>
                 <li><a href="sections/servicios.html">Servicios</a></li>
                 <li><a href="sections/galeria.html">Galeria</a></li>
@@ -41,64 +42,123 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </header><!--End Header-->
+    </header>
+    <!--End Header-->
 
-    <div class="hero"> <!--Hero-->
+    <div class="hero">
+        <!--Hero-->
         <div class="contenedor-hero">
-            <h1 >Boutique Automotriz</h1>
+            <h1><span>Boutique</span> Automotriz</h1>
             <h2>Una vida llena de <span>Seguridad</span></h2>
         </div>
-    </div> <!--End Hero-->
+    </div>
+    <!--End Hero-->
 
-    <main> <!--Main-->
-        <section class="sec-services"> <!--Section Services-->
-            <div class="sec-container"> <!--Container-->
+    <main>
+        <!--Main-->
+        <section class="section__distribuidores">
+            <!--Init Section Distribuidores-->
+            <div class="block__titles">
+                <h2 class="">Distribuidores Autorizados</h2>
+            </div>
+            <div class="block__distribuidores">
+                <div class="block__distribuidores--img1"><img src="img/distribuidor1.png" alt="img distribuidor"></div>
+                <div class="block__distribuidores--img2"><img src="img/distribuidor2.png" alt="img distribuidor"></div>
+                <div class="block__distribuidores--img3"><img src="img/distribuidor3.png" alt="img distribuidor"></div>
+                <div class="block__distribuidores--img4"><img src="img/distribuidor4.png" alt="img distribuidor"></div>
+                <div class="block__distribuidores--img5"><img src="img/distribuidor5.png" alt="img distribuidor"></div>
+                <!-- <div class="block__distribuidores--img6"><img src="img/distribuior6.png" alt="img distribuidor"></div>-->
+            </div>
+        </section>
+        <!--End Section Distribuidores-->
+
+        <section class="sec-services">
+            <!--Section Services-->
+            <div class="sec-container">
+                <!--Container-->
+                <h2 class="services-title">Servicios</h2>
                 <div class="services-container">
-                    <h2 class="services-title">Servicios</h2>
                     <article class="ser-art1">
-                        <h3>Instalacion</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
-                            quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae
-                            suscipit. Et
-                            quos adipisci libero.</p>
+                        <img src="img/ser-instalacion.png" alt="">
+                        <div class="ser__container">
+                            <h3>Instalacion</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
+                                illo</p>
+                        </div>
                     </article>
 
                     <article class="ser-art2">
-                        <h3>Alineacion y Balanceo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
-                            quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae
-                            suscipit. Et
-                            quos adipisci libero.</p>
+                        <img src="img/ser-alineacion.png" alt="">
+                        <div class="ser__container">
+                            <h3>Alineacion</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
+                                illo</p>
+                        </div>
                     </article>
 
                     <article class="ser-art3">
-                        <h3>Rectificacion</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
-                            quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae
-                            suscipit. Et
-                            quos adipisci libero.</p>
+                        <img src="img/ser-balanceo.png" alt="">
+                        <div class="ser__container">
+                            <h3>Balanceo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
+                                illo</p>
+                        </div>
                     </article>
 
                     <article class="ser-art4">
-                        <h3>Distribuidores Autorizados</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas illo
-                            quibusdam, illum laboriosam dicta! Nisi sed repellendus quasi ex, et neque molestiae
-                            suscipit. Et
-                            quos adipisci libero.</p>
+                        <img src="img/ser-rectificacion.png" alt="">
+                        <div class="ser__container">
+                            <h3>Rectificacion</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
+                                illo</p>
+                        </div>
+                    </article>
+
+                    <article class="ser-art5">
+                        <img src="https://victoriamgclub.com/wp-content/uploads/2020/01/021-tire.png?ezimgfmt=rs:256x256/rscb1/ng:webp/ngcb1" alt="">
+                        <div class="ser__container">
+                            <h3>Nitrogeno</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
+                                illo</p>
+                        </div>
+                    </article>
+
+                    <article class="ser-art6">
+                        <img src="img/ser-luces.png" alt="">
+                        <div class="ser__container">
+                            <h3>Alineacion Luces</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
+                                illo</p>
+                        </div>
+                    </article>
+
+                    <article class="ser-art7">
+                        <img src="img/ser-restauracion.png" alt="">
+
+                        <div class="ser__container">
+                            <h3>Restauracion y Diamantado</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam architecto aliquid voluptatibus iste itaque vitae provident dolorem minima!</p>
+                        </div>
                     </article>
                 </div>
-            </div> <!--End Sec-Container-->
-        </section> <!--End Section Services-->
+            </div>
+            <!--End Sec-Container-->
+        </section>
+        <!--End Section Services-->
 
-        <section class="inputs"> <!--Section Inputs-->
-            <div class="inputs__container"> <!--Inputs Container-->
-                <article class="inputs__blog"> <!--Inputs Blog-->
+        <section class="inputs">
+            <!--Section Inputs-->
+            <div class="inputs__container">
+                <!--Inputs Container-->
+                <article class="inputs__blog">
+                    <!--Inputs Blog-->
                     <h2>Blog</h2>
                     <section>
                         <h3>Entrada 1</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum iure tenetur quasi
                             dicta ut
-                            voluptatibus temporibus. Possimus, a cumque aliquid magnam accusamus officiis labore,                             delectus,
+                            voluptatibus temporibus. Possimus, a cumque aliquid magnam accusamus officiis labore,
+                            delectus,
                             eveniet
                             porro ipsa doloribus.</p>
                     </section>
@@ -113,22 +173,33 @@
                             eveniet
                             porro ipsa doloribus.</p>
                     </section>
-                </article> <!--End Inputs Blog-->
+                </article>
+                <!--End Inputs Blog-->
 
-                <article class="inputs__evidence"><!--Inputs Evidence-->
+                <article class="inputs__evidence">
+                    <!--Inputs Evidence-->
                     <h2>Nuestros Trabajos</h2>
                     <div class="cat">
                         <img src="img/img-input.jpg">
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem labore ex voluptatem et tenetur provident. Dicta perspiciatis sit incidunt pariatur molestiae, inventore ipsum tenetur similique! Eligendi rerum quibusdam necessitatibus sed?. 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sequi cumque ducimus tenetur nobis, vero minus? Sed eos voluptatibus consequatur suscipit, minus qui. Officiis numquam eius quae quisquam vel reiciendis.</p>
-                    </div>    
-                </article><!--Inputs Evidence-->
-            </div> <!--End Sec-Container-->
-        </section> <!--End Section Inputs-->
-    </main> <!--End Main-->
 
-    <footer class="site-footer"> <!--Footer-->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem labore ex voluptatem et
+                            tenetur provident. Dicta perspiciatis sit incidunt pariatur molestiae, inventore ipsum
+                            tenetur similique! Eligendi rerum quibusdam necessitatibus sed?.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sequi cumque ducimus
+                            tenetur nobis, vero minus? Sed eos voluptatibus consequatur suscipit, minus qui. Officiis
+                            numquam eius quae quisquam vel reiciendis.</p>
+                    </div>
+                </article>
+                <!--Inputs Evidence-->
+            </div>
+            <!--End Sec-Container-->
+        </section>
+        <!--End Section Inputs-->
+    </main>
+    <!--End Main-->
+
+    <footer class="site-footer">
+        <!--Footer-->
         <div class="redes footer-redes">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -141,7 +212,8 @@
         <div class="copyright">
             <p>todos los derechos reservados <span><i class="fa-regular fa-registered"></i></span></p>
         </div>
-    </footer> <!--End Footer-->
+    </footer>
+    <!--End Footer-->
 </body>
 
 </html>
