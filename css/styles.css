@@ -163,6 +163,7 @@ p {
     padding-top: 20rem;
     align-items: center;
     animation: slideInUp;
+    animation-delay: 1s;
     animation-duration: 2s;
 }  
 .hero .contenedor-hero h1 {
@@ -309,7 +310,7 @@ p {
 .site-footer a:hover {
     text-decoration: none;
     color:  var(--primary);    
-    transition: 0.3s;
+    transition: 1s;
 }
 .site-footer p {
     color: var(--white);
@@ -529,7 +530,6 @@ MEDIA 420PX
     }
     p {
         font-size: 2rem;
-
     }
 
     /* Utilities */
@@ -567,6 +567,7 @@ MEDIA 420PX
         color: var(--nav_hover);
         transform: scale(1.3);
         animation-duration: 2s;
+        
     }
 
     /* Main */
@@ -593,7 +594,7 @@ MEDIA 420PX
     }
     .site-footer a:hover {
         color:  var(--primary);    
-        transition: 0.3s;
+        transition: 1s;
     }
     /* ?*************Contacto****************/ 
     .contacto {
@@ -654,9 +655,10 @@ MEDIA 768PX
     /* Header */
     .navegacion ul {
         align-items: center;
+        margin: 1rem 0 0 0;
     }
     .logo {
-        width: 50%;
+        width: 35%;
     }
     .logo a {
         font-size: 3rem;
@@ -779,6 +781,11 @@ MEDIA 950PX
     .site-header {
         flex-direction: row;
         justify-content: space-around;
+        padding: 0;
+    }
+    .site-header .navegacion ul {
+        margin: 0;
+        padding: 0.5rem 0;
     }
     .header-redes a{
         padding-right: 1.5rem;
