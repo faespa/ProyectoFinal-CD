@@ -1,4 +1,4 @@
-/**********Variables***************/
+    /**********Variables***************/
 :root {
     --white: #ffffff;
     --whiteBG: #ECF0F1;
@@ -10,6 +10,7 @@
     --col_title: #ffff00;
     --col_titlebi: #ff0000;
     --nav_hover: #ffdead;
+    --nav_hover_opa: rgba(255, 222, 173, 0.3);
     --primary: #ffc107;
     --secundary: #0097a7;
     --gray: #757575;
@@ -92,62 +93,62 @@ p {
 }
 
 /******************************HEADER*******************************/
-.site-header {
-    font-family: var(--font-principal);
-    background-color: var(--blackHeader);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.site-header .navegacion ul{
-    list-style: none;
-    padding: 0;
-}
-.navegacion {
-    width: 100%;
-}
-.navegacion li a {
-    display: flex;  
-    justify-content: center;
-    padding: 0;
-}
-.site-header a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.5rem;
-    margin: 0 auto;
-}
-.site-header a:hover {
-    color:  var(--naranja);      
-    transition: 1s;
-}
-.logo {
-    font-family: var(--font-title);
-    text-align: center;
-}
-.logo a {   
-    color: var(--nav_hover); 
-    font-size: 3rem;
-}
-.logo a:hover {
-    color: var(--col_title);
-    transition: 0.3s;
-}
-.logo a span {
-    text-transform: uppercase;
-    color: var(--col_titlebi);
-}
+    .site-header {
+        font-family: var(--font-principal);
+        background-color: var(--blackHeader);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-header .navegacion ul{
+        list-style: none;
+        padding: 0;
+    }
+    .navegacion {
+        width: 100%;
+    }
+    .navegacion li a {
+        display: flex;  
+        justify-content: center;
+        padding: 0;
+    }
+    .site-header a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .site-header a:hover {
+        color:  var(--naranja);      
+        transition: 1s;
+    }
+    .logo {
+        font-family: var(--font-title);
+        text-align: center;
+    }
+    .logo a {   
+        color: var(--nav_hover); 
+        font-size: 3rem;
+    }
+    .logo a:hover {
+        color: var(--col_title);
+        transition: 0.3s;
+    }
+    .logo a span {
+        text-transform: uppercase;
+        color: var(--col_titlebi);
+    }
 
-.redes  {
-    padding-bottom: 1rem;
-    justify-content: center;
-}
-.redes a {
-    padding: 0 0.5rem;
-}
-.navegacion a {
-    padding-right: 10rem;
-}
+    .redes  {
+        padding-bottom: 1rem;
+        justify-content: center;
+    }
+    .redes a {
+        padding: 0 0.5rem;
+    }
+    .navegacion a {
+        padding-right: 10rem;
+    } 
 
 /********* Hero **********/
 .hero {
@@ -184,6 +185,7 @@ p {
     text-align: left;
 }
 
+
 /**********Main******************/
 /**** section distribuidores ****/
 .section__distribuidores {
@@ -214,6 +216,27 @@ p {
 }
 .block__distribuidores div img{
     height: 5rem;
+}
+.carousel {
+    padding-bottom: 3rem;
+}
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 6px;
+    border: none;
+    border-radius: 24px;
+}
+  
+.carousel-indicators [data-bs-target] span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #7952b3;
+    border-radius: inherit;
 }
 /****Servies**********/
 .sec-services {
@@ -279,6 +302,27 @@ p {
     text-align: center;
     margin: 1rem;
 }
+
+/* Acordeon */
+.section-blog {
+    padding-top: 1rem;
+}
+.accordion .accordion-item {
+    border-radius: 2rem;
+    background-color: var(--nav_hover);
+    padding: 0.5rem 0.5rem;
+}
+.accordion .accordion-header .accordion-button {
+    border-radius: 2rem;
+    background-color: #ebedee;
+}   
+.accordion-header .collapsed {
+    border-radius: 2rem;
+}
+.accordion-header .accordion-button:focus {
+    background-color: var(--secundary);
+}
+
 .inputs__evidence {
     padding: 2rem 0;
 }
@@ -345,6 +389,17 @@ p {
 }
 .contacto p {
     color: var(--white);
+}
+.cont-toast {
+    display: flex;
+    justify-content: end;
+}
+.cont-toast .toast {
+    position: fixed;
+    z-index: 3;
+}
+.toast p {
+    font-size: 1rem;
 }
 .contacto .formulario {
     background-color: var(--gris);
@@ -427,34 +482,31 @@ p {
     width: 80%;
     margin: 0 auto;
 }
-
-
-/***********Table**********/
+/*Table*/
 table {
+    padding: 2rem 0;
     table-layout: fixed;
-    width: 100%;
+    width: 100%;    
     border-collapse: collapse;
-    border: 3px solid var(--nav_hover );
+    border: 3px solid var(--nav_hover);
 }
 .section-table h2 {
-    color: var(--nav_hover);
     text-transform: capitalize;
 }
-table tr:nth-child(1) {
-    font-size: 1rem;
-    color: var(--nav_hover);
-    padding: 0rem;
-}
 th {
-    padding: 1rem;  
     text-transform: uppercase;  
+    text-align: center;
+    color: var(--nav_hover);
+}
+tbody {
+    color: var(--white);
+    align-items: center;
 }
 td {
-    padding: 1rem;
     color: var(--white);
     text-align: center;
     font-size: 1rem;
-}
+} 
 
 /**************GALLERY*******************/
 .main-gallery {
@@ -596,30 +648,13 @@ MEDIA 420PX
         color:  var(--primary);    
         transition: 1s;
     }
+    
     /* ?*************Contacto****************/ 
     .contacto {
         width: 80%;
     }
     .main-sections  article img{
         width: 90%;
-    }
-
-    /* ?*************Servicios****************/ 
-    table {
-        margin: 0.5rem;
-    }
-    table tr:nth-child(1) {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-    }
-    th {
-        padding: 0.5rem;  
-    }
-    td {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        color: var(--white);
-        text-align: center;
     }
 
     /* ?*************Gallery****************/ 
@@ -697,23 +732,12 @@ MEDIA 768PX
     }
     .block__distribuidores div img{
         height: 9rem;
-    }
-
-    /* Inputs */
-    .inputs__container {
-        display: flex;
-        justify-content: space-evenly; 
-        padding-bottom: 2rem; 
-    }
-    .inputs__evidence .cat{
-        padding: 1rem;
-        height: 20rem;
-    }
-
+    }    
     /* Footer */
     .footer-logo {
         margin: 0 auto;
     }
+    
 
     /* ?*************Contacto****************/ 
     .contenedor-campos {
@@ -738,23 +762,11 @@ MEDIA 768PX
     }
 
     /* *************Servicios****************/
-    table {
-        margin: 2rem;
-    }
-    table tr:nth-child(1) {
-        font-size: 2rem;
-        padding: 2rem;
-    }
-    th {
-        padding: 2rem;  
-    }
     td {
         font-size: 2rem;
-        padding: 2rem;
-        color: var(--white);
-        text-align: center;
-    }
 
+    }
+    
     /* *************Gallery****************/
     .section-gallery {
         display: grid;

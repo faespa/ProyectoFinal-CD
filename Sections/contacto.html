@@ -11,16 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/8ecc71c098.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Lobster&family=Roboto:wght@100;300;400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Lobster&family=Roboto:wght@100;300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="preload" href="../css/styles.css" as="style">
     <link href="../css/styles.css" rel="stylesheet">
     <title>Contact</title>
 </head>
 
 <body>
-    <header class="site-header"> <!--Inicio Header-->
-        
+    <header class="site-header">
+        <!--Inicio Header-->
+
 
         <nav class="navegacion">
             <ul>
@@ -39,14 +42,33 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </header> <!--Final Header-->
+    </header>
+    <!--Final Header-->
 
 
-    <main> <!--Inicio Main-->
-        <section class="contacto"> <!--Inicio section-->
+    <main>
+        <!--Inicio Main-->
+        <div class="cont-toast">
+            <div class="toast toast-demo fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Servicio al cliente</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <p>Comunicate rapidamente a nuestro <br>tel: 315 848 05 48</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="contacto">
+            <!--Inicio section-->
             <h1>Contacto</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates maxime facilis nemo commodi aspernatur ipsam provident minima quod in, eaque ipsa. Quibusdam reiciendis tempora ex aliquid adipisci, repellat consequatur itaque?</p>
-            <form class="formulario"> <!--Inicio Form-->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates maxime facilis nemo commodi
+                aspernatur ipsam provident minima quod in, eaque ipsa. Quibusdam reiciendis tempora ex aliquid adipisci,
+                repellat consequatur itaque?</p>
+            <form class="formulario">
+                <!--Inicio Form-->
                 <fieldset>
                     <legend>Contactános llenando todos los campos</legend>
 
@@ -65,7 +87,7 @@
                             <label>Correo</label>
                             <input class="input-text" type="email" placeholder="Tu Email">
                         </div>
-                
+
                         <div class="campo">
                             <label>Mensaje</label>
                             <textarea class="input-text"></textarea>
@@ -76,11 +98,15 @@
                         <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
                 </fieldset>
-            </form>  <!--final Form-->             
-        </section> <!--fin Section-->
-    </main> <!--fin Main-->
+            </form>
+            <!--final Form-->
+        </section>
+        <!--fin Section-->
+    </main>
+    <!--fin Main-->
 
-    <footer class="site-footer"> <!--Inicio Footer-->
+    <footer class="site-footer">
+        <!--Inicio Footer-->
 
         <div class="redes footer-redes">
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -94,6 +120,11 @@
         <div class="copyright">
             <p>todos los derechos reservados <span><i class="fa-regular fa-registered"></i></span></p>
         </div>
-    </footer> <!--fin Footer-->
+    </footer><!--fin Footer-->
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/java.js"></script>
+
 </body>
+
 </html>

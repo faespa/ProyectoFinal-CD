@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
-
-    
     <title>Proyecto</title>
 </head>
 
@@ -59,26 +57,65 @@
 
     <main>
         <!--Main-->
-        <section class="section__distribuidores">
-            <!--Init Section Distribuidores-->
+        <div class="cont-toast">
+            <div class="toast toast-demo fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Servicio al cliente</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <p>Comunicate rapidamente a nuestro <br>tel: 315 848 05 48</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="section__distribuidores"><!--Init Section Distribuidores-->
             <div class="block__titles">
                 <h2 class="">Distribuidores Autorizados</h2>
             </div>
-            <div class="block__distribuidores">
-                <div class="block__distribuidores--img1"><img src="img/distribuidor1.png" alt="img distribuidor"></div>
-                <div class="block__distribuidores--img2"><img src="img/distribuidor2.png" alt="img distribuidor"></div>
-                <div class="block__distribuidores--img3"><img src="img/distribuidor3.png" alt="img distribuidor"></div>
-                <div class="block__distribuidores--img4"><img src="img/distribuidor4.png" alt="img distribuidor"></div>
-                <div class="block__distribuidores--img5"><img src="img/distribuidor5.png" alt="img distribuidor"></div>
-                <!-- <div class="block__distribuidores--img6"><img src="img/distribuior6.png" alt="img distribuidor"></div>-->
-            </div>
-        </section>
-        <!--End Section Distribuidores-->
 
-        <section class="sec-services">
-            <!--Section Services-->
-            <div class="sec-container">
-                <!--Container-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"><span></span></li>
+                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1" class="" aria-current="true"><span></span></li>
+                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"><span></span></li>
+                </ol>
+                <div class="carousel-inner">
+    
+                    <div class="carousel-item active">
+                        <div class="block__distribuidores">
+                            <div class="block__distribuidores--img1"><img src="img/distribuidor1.png" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img2"><img src="img/distribuidor2.png" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img3"><img src="img/distribuidor3.png" alt="img distribuidor"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="block__distribuidores">
+                            <div class="block__distribuidores--img1"><img src="img/distribuidor4.png" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img2"><img src="img/distribuidor5.png" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img3"><img src="img/distribuidor6.png" alt="img distribuidor"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="block__distribuidores">
+                            <div class="block__distribuidores--img1"><img src="img/distribuidor7.png" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img2"><img src="img/distribuidor8.jpg" alt="img distribuidor"></div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section><!--End Section Distribuidores-->
+
+        <section class="sec-services"><!--Section Services-->
+            <div class="sec-container"><!--Container-->
                 <h2 class="services-title">Servicios</h2>
                 <div class="services-container">
                     <article class="ser-art1">
@@ -118,7 +155,8 @@
                     </article>
 
                     <article class="ser-art5">
-                        <img src="https://victoriamgclub.com/wp-content/uploads/2020/01/021-tire.png?ezimgfmt=rs:256x256/rscb1/ng:webp/ngcb1" alt="">
+                        <img src="https://victoriamgclub.com/wp-content/uploads/2020/01/021-tire.png?ezimgfmt=rs:256x256/rscb1/ng:webp/ngcb1"
+                            alt="">
                         <div class="ser__container">
                             <h3>Nitrogeno</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
@@ -140,41 +178,81 @@
 
                         <div class="ser__container">
                             <h3>Restauracion y Diamantado</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam architecto aliquid voluptatibus iste itaque vitae provident dolorem minima!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam architecto aliquid
+                                voluptatibus iste itaque vitae provident dolorem minima!</p>
                         </div>
                     </article>
                 </div>
-            </div>
-            <!--End Sec-Container-->
-        </section>
-        <!--End Section Services-->
+            </div><!--End Sec-Container-->
+        </section><!--End Section Services-->
 
-        <section class="inputs">
-            <!--Section Inputs-->
-            <div class="inputs__container">
-                <!--Inputs Container-->
-                <article class="inputs__blog">
-                    <!--Inputs Blog-->
+        <section class="inputs"><!--Section Inputs-->
+            <div class="inputs__container"><!--Inputs Container-->
+                <article class="inputs__blog"><!--Inputs Blog-->
                     <h2>Blog</h2>
-                    <section>
-                        <h3>Entrada 1</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum iure tenetur quasi
-                            dicta ut
-                            voluptatibus temporibus. Possimus, a cumque aliquid magnam accusamus officiis labore,
-                            delectus,
-                            eveniet
-                            porro ipsa doloribus.</p>
-                    </section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reprehenderit reiciendis natus in
+                        dolores, sed nostrum impedit explicabo fugit, officia maiores aspernatur, modi aut nulla
+                        provident accusamus eaque blanditiis 
+                        velit.</p>
 
-                    <section>
-                        <h3>Entrada 2</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum iure tenetur quasi
-                            dicta
-                            ut
-                            voluptatibus temporibus. Possimus, a cumque aliquid magnam accusamus officiis labore,
-                            delectus,
-                            eveniet
-                            porro ipsa doloribus.</p>
+                    <section class="section-blog">
+                        <div class="accordion" id="accordionBasic">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h3>Presion Adecuada</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">
+                                        <p><strong>Presion en las llantas. </strong> Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Minus alias incidunt eum magnam laudantium
+                                            voluptatem quibusdam quo, error labore at adipisci tempore, laborum tempora
+                                            commodi quis provident, reiciendis possimus voluptatibus.<mark> Presion
+                                                recomendada por el fabricante </mark></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h3>Cambiar a rin mas grande</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">
+                                        <p><strong>Deberia ponerle rines mas grande a mi carro. </strong> Lorem ipsum
+                                            dolor sit amet consectetur adipisicing elit. Minus alias incidunt eum magnam
+                                            laudantium voluptatem quibusdam quo, error labore at adipisci tempore,
+                                            laborum tempora commodi quis provident, reiciendis possimus voluptatibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h3>Nitrogeno</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">
+                                        <p><strong>Ventajas y desventajas nitrogeno en llantas. </strong> Lorem ipsum
+                                            dolor sit amet consectetur adipisicing elit. Minus alias incidunt eum magnam
+                                            laudantium voluptatem quibusdam quo, error labore at adipisci tempore,
+                                            laborum tempora commodi quis provident, reiciendis possimus voluptatibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </article>
                 <!--End Inputs Blog-->
@@ -217,9 +295,10 @@
         </div>
     </footer>
     <!--End Footer-->
+
+    <!-- JavaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
-
-
+    <script src="js/java.js"></script>
 
 </body>
 
