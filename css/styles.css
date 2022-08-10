@@ -34,6 +34,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font-principal);
+    background-color: var(--black);
     background-image: url(/img/bg.jpg);
     background-size: contain;
     font-size: 1.6rem;      
@@ -341,7 +342,7 @@ p {
 /***** Footer ****/
 .site-footer {
     font-family: var(--font-principal);
-    background-color: var(--black);
+    background-color: var(--blackHeader);
     text-align: center;
     padding-top: 1rem;
 }
