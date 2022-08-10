@@ -39,7 +39,6 @@ function fillCarouselIndicator(index) {
       i + "%";
 
     if (i >= 100) {
-      // i = 0; -> just in case
       carousel.next();
     }
   }, 50);
