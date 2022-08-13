@@ -35,7 +35,7 @@ body {
     padding: 0;
     font-family: var(--font-principal);
     background-color: var(--black);
-    background-image: url(/img/bg.jpg);
+    background-image: url(/img/bg.jpg) !important;
     background-size: contain;
     font-size: 1.6rem;      
 }
