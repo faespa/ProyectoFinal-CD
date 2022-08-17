@@ -1,0 +1,36 @@
+.boton {
+    background-color: $nav_hover;
+    color: $black;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    font-weight: 200;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+}
+
+.w-sm-100 {
+    width: 100%;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .boton {
+        width: auto;
+    } 
+}
+@media (min-width: $breakpoint-desktop) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
