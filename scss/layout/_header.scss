@@ -80,8 +80,7 @@
         .header-logo {
             font-size:  2rem;
         }
-    } 
-    .redes {
+        .redes {
         display: flex;
         padding: 0;
         a {
@@ -98,6 +97,8 @@
             }
         }
     }
+    } 
+    
 }
 @media (min-width: $breakpoint-desktop) {
     .site-header {
@@ -120,25 +121,27 @@
     }
 }
 
-// @media (min-width: $breakpoint-monitor) {
-//     .site-header {
-//         justify-content: space-around;
-//         padding: 0;
-//         .navegacion {
-//             ul {
-//                 margin: 0;
-//                 padding: 0.5rem 0;
-//             }
-//         }
-//     }
+@media (min-width: $breakpoint-monitor) {
+    .site-header {
+        justify-content: space-around;
+        padding: 0;
+        .navegacion {
+            ul {
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+        }
+    }
 
-//     .header-redes {
-//         a{
-//             padding-right: 1.5rem;
-//             &:last-child {
-//                 padding-right: 1.5rem;
-//             }
-//         }
+    .header-redes {
+        a{
+            padding-right: 1.5rem;
+            &:last-child {
+                padding-right: 1.5rem;
+            }
+        }
         
-//     }
-// }
+    }
+}
+
+
