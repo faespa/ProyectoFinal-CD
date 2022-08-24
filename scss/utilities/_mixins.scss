@@ -1,0 +1,28 @@
+// header
+$estilos-header: (
+    color: $col_title,
+    dimension: 3rem,
+    center1p5: 1.5rem
+);
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin flex-wrap-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin adjust-content($width) {
+    width: $width;
+    margin: 0   auto; 
+}

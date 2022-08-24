@@ -7,7 +7,8 @@
     a {
         text-decoration: none;
         color: $white;
-        font-size: 3rem;
+        font-size: map-get($estilos-header, dimension);
+        padding: 0 0.5rem 0 0.5rem;
 
         &:hover {
             text-decoration: none;
@@ -39,7 +40,8 @@
 
     a {   
         color: $nav_hover; 
-        font-size: 3rem;
+        font-size: map-get($estilos-header, dimension);
+        
     }
 }
 
@@ -51,13 +53,8 @@
     }
     .site-footer {
         a {
-        color: var(--white);
-        font-size: 3rem;
-        }
-        &:hover {
-            color:  var(--primary);    
-            transition: 1s;
-        }
+            color: $black;
+            font-size: map-get($estilos-header, dimension);        }
     }
 }
 

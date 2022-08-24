@@ -58,9 +58,7 @@
     justify-content: center;
 }
 .block__distribuidores {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    @include flex-wrap-center;
     justify-content: space-evenly;
 
     div {
@@ -101,9 +99,10 @@
 
     h2{
         font-size: 1.5rem;
-        color: var$white;
+        color: $white;
         font-family: $font-serif;
         font-weight: bold;
+        text-align: center;
     }
     h3{
         color: $white;
@@ -143,10 +142,7 @@
     width: 90%;
     margin: 0 auto;
 
-    h1,h2,h3 {
-        color: $nav_hover;
-    }
-    h1,h2 {
+    h2 {
         text-align: center;  
     }
     
@@ -156,11 +152,10 @@
     border-radius: 3rem;
     padding: 2rem;
 
-    h1 {
-        text-align: center;
-        margin: 1rem;
+    h2 {
+        color: $secundary;
     }
-    h2,h3,p {
+    h3,p {
         color: $black;    
     }
     section {
@@ -174,14 +169,14 @@
 }
 .accordion {
     .accordion-item {
-        border-radius: 2rem;
+        border-radius: 1.5rem;
         background-color: $nav_hover;
         padding: 0.5rem 0.5rem;
     }
 }
 .accordion-header {
     .accordion-button {
-        border-radius: 2rem;
+        border-radius: 1.5rem;
         background-color: $whiteBG;
         
         &:focus {
@@ -195,10 +190,11 @@
 
 .inputs__evidence {
     padding: 2rem 0;
+    h2 {
+        color: $white;
+    }
     .cat{ 
-        display: flex;
-        flex-direction: column;
-        align-items: center;  
+        @include flex-column-center;
         height: 30%;   
     }
     p {
@@ -232,6 +228,14 @@
             }
         }
     }
+
+    /****Servies**********/
+.sec-services {
+
+    h2{
+        font-size: 3rem;
+    }
+}
 }
 
 @media (min-width: $breakpoint-desktop) {
@@ -263,6 +267,11 @@
             }
         }
     }
+        /* Services */
+    .sec-services {
+        width: 95%;
+        margin: 0 auto;
+    }
 
     /* Main */
     .section__distribuidores {
@@ -281,11 +290,10 @@
     /* Services */
     .sec-services {
         margin-top: 2rem;
+        width: 95%;
     }
     .sec-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
         h2 {
             font-size:  2.5rem;
         }    

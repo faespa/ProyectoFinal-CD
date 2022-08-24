@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="Pagina ofucial de Autorines Car Boutique, distribuidores Autorizados de Llantas y rRines de alta calidad para todo tipo de vehiculos">
+    <meta name="keywords" content="Colombia, Ibague, Automovil LLantas, serviteca, Rines">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,23 +20,32 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
-    <title>Proyecto</title>
+    <title>AutoRines</title>
 </head>
 
 <body>
-    <header class="site-header header">
-        <!--Header-->
+    <header class="site-header header"><!--Header-->
 
-        <nav class="navegacion">
-            <ul>
+        <nav class="navegacion navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+
                 <div class="logo header-logo">
-                    <li><a href="index.html">Auto<span>Rines</span></a></li>
+                    <a class="navbar-brand" href="index.html">Auto<span>Rines</span></a>
                 </div>
-                <li><a href="sections/nosotros.html">Nosotros</a></li>
-                <li><a href="sections/servicios.html">Servicios</a></li>
-                <li><a href="sections/galeria.html">Galeria</a></li>
-                <li><a href="sections/contacto.html">Contacto</a></li>
-            </ul>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" navbar-collapse" id="navbarDark">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item hover-aqua"><a class="nav-link active" aria-current="page" href="sections/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sections/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sections/galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sections/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <div class="redes header-redes">
@@ -42,8 +53,7 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </header>
-    <!--End Header-->
+    </header><!--End Header-->
 
     <div class="hero">
         <!--Hero-->
@@ -56,20 +66,9 @@
 
     <main>
         <!--Main-->
-        <div class="cont-toast">
-            <div class="toast toast-demo fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <strong class="me-auto">Servicio al cliente</strong>
-                    <small>Now</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    <p>Comunicate rapidamente a nuestro <br>tel: 315 848 05 48</p>
-                </div>
-            </div>
-        </div>
 
-        <section class="section__distribuidores"><!--Init Section Distribuidores-->
+        <section class="section__distribuidores">
+            <!--Init Section Distribuidores-->
             <div class="block__titles">
                 <h2 class="">Distribuidores Autorizados</h2>
             </div>
@@ -77,52 +76,63 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"><span></span></li>
-                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1" class="" aria-current="true"><span></span></li>
+                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1" class="" aria-current="true">
+                        <span></span></li>
                     <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"><span></span></li>
                 </ol>
                 <div class="carousel-inner">
-    
+
                     <div class="carousel-item active">
                         <div class="block__distribuidores">
-                            <div class="block__distribuidores--img1"><img src="img/distribuidor1.png" alt="img distribuidor"></div>
-                            <div class="block__distribuidores--img2"><img src="img/distribuidor2.png" alt="img distribuidor"></div>
-                            <div class="block__distribuidores--img3"><img src="img/distribuidor3.png" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img1"><img src="img/distribuidor1.png"
+                                    alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img2"><img src="img/distribuidor2.png"
+                                    alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img3"><img src="img/distribuidor3.png"
+                                    alt="img distribuidor"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="block__distribuidores">
-                            <div class="block__distribuidores--img1"><img src="img/distribuidor4.png" alt="img distribuidor"></div>
-                            <div class="block__distribuidores--img2"><img src="img/distribuidor5.png" alt="img distribuidor"></div>
-                            <div class="block__distribuidores--img3"><img src="img/distribuidor6.png" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img1"><img src="img/distribuidor4.png"
+                                    alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img2"><img src="img/distribuidor5.png"
+                                    alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img3"><img src="img/distribuidor6.png"
+                                    alt="img distribuidor"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="block__distribuidores">
-                            <div class="block__distribuidores--img1"><img src="img/distribuidor7.png" alt="img distribuidor"></div>
-                            <div class="block__distribuidores--img2"><img src="img/distribuidor8.jpg" alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img1"><img src="img/distribuidor7.png"
+                                    alt="img distribuidor"></div>
+                            <div class="block__distribuidores--img2"><img src="img/distribuidor8.jpg"
+                                    alt="img distribuidor"></div>
+                        </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+                        <span class="" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+                        <span class="" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-        </section><!--End Section Distribuidores-->
+        </section>
+        <!--End Section Distribuidores-->
 
-        <section class="sec-services"><!--Section Services-->
-            <div class="sec-container"><!--Container-->
+        <section class="sec-services">
+            <!--Section Services-->
+            <div class="sec-container">
+                <!--Container-->
                 <h2 class="services-title">Servicios</h2>
                 <div class="services-container">
                     <article class="ser-art1">
                         <img src="img/ser-instalacion.png" alt="">
                         <div class="ser__container">
                             <h3>Instalacion</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
-                                illo</p>
+                            <p>Instalacion de Rines y Llantas usando equipos adecuados</p>
                         </div>
                     </article>
 
@@ -130,8 +140,7 @@
                         <img src="img/ser-alineacion.png" alt="">
                         <div class="ser__container">
                             <h3>Alineacion</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
-                                illo</p>
+                            <p>Alineacion de las llantas del vehiculo para que la superficie de conatcto con el pavimento sea el adecuado</p>
                         </div>
                     </article>
 
@@ -139,8 +148,7 @@
                         <img src="img/ser-balanceo.png" alt="">
                         <div class="ser__container">
                             <h3>Balanceo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
-                                illo</p>
+                            <p>compensacion a la llanta para generar estabilidad y evitar vibraciones en la conduccion.</p>
                         </div>
                     </article>
 
@@ -148,8 +156,7 @@
                         <img src="img/ser-rectificacion.png" alt="">
                         <div class="ser__container">
                             <h3>Rectificacion</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
-                                illo</p>
+                            <p>mantenimiento correctivo al rin con el fin de darle su horma original</p>
                         </div>
                     </article>
 
@@ -158,8 +165,7 @@
                             alt="">
                         <div class="ser__container">
                             <h3>Nitrogeno</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
-                                illo</p>
+                            <p>El inflado con nitrógeno, disminuyendo las fugas de aire y manteniendo mas fria la llanta lo que aumenta su vida util</p>
                         </div>
                     </article>
 
@@ -167,8 +173,7 @@
                         <img src="img/ser-luces.png" alt="">
                         <div class="ser__container">
                             <h3>Alineacion Luces</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum libero voluptas
-                                illo</p>
+                            <p>Alineacion de luces bajas y altas para una conduccion nocturna optima</p>
                         </div>
                     </article>
 
@@ -177,22 +182,23 @@
 
                         <div class="ser__container">
                             <h3>Restauracion y Diamantado</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam architecto aliquid
-                                voluptatibus iste itaque vitae provident dolorem minima!</p>
+                            <p>Restauracion del Rin mediante un proceso de diamantado con el fin de quitar golpes en la cara del rin.</p>
                         </div>
                     </article>
                 </div>
-            </div><!--End Sec-Container-->
-        </section><!--End Section Services-->
+            </div>
+            <!--End Sec-Container-->
+        </section>
+        <!--End Section Services-->
 
-        <section class="inputs"><!--Section Inputs-->
-            <div class="inputs__container"><!--Inputs Container-->
-                <article class="inputs__blog"><!--Inputs Blog-->
+        <section class="inputs">
+            <!--Section Inputs-->
+            <div class="inputs__container">
+                <!--Inputs Container-->
+                <article class="inputs__blog">
+                    <!--Inputs Blog-->
                     <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reprehenderit reiciendis natus in
-                        dolores, sed nostrum impedit explicabo fugit, officia maiores aspernatur, modi aut nulla
-                        provident accusamus eaque blanditiis 
-                        velit.</p>
+                    <p>Articulos relacionados con informacion fiable con todo lo relacionado en cuanto rines y llantas para vehiculos</p>
 
                     <section class="section-blog">
                         <div class="accordion" id="accordionBasic">

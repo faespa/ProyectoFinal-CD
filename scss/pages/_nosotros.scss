@@ -1,6 +1,5 @@
 .main-sections {
-    width: 90%;
-    margin: 0 auto;
+    @include adjust-content(90%);
     h1 {
         color: $nav_hover;
         padding-top: 2rem;
@@ -18,11 +17,9 @@
 
 .general-section {
     padding: 2rem;  
-    display: flex;
-    flex-direction: column;
+    @include flex-column-center;@include flex-column-center;
     img {
-        margin: 0   auto; 
-        width: 100%; 
+        @include adjust-content(100%);
     }
 }
 
@@ -33,12 +30,10 @@
     }
     section {
         article {
-            display: flex;
-            flex-direction: column;
+            @include flex-column-center;
             padding: 2rem 0;
             img{
-                width: 80%;
-                margin: 0 auto;
+                @include adjust-content(80%);
             }
         }
     }
@@ -54,31 +49,36 @@ table {
 }
 .section-table h2 {
     text-transform: capitalize;
+    color: $white;
+    margin: 0 auto;
 }
 th {
     text-transform: uppercase;  
     text-align: center;
     color: $nav_hover;
+    font-size: 1rem;
 }
-tbody {
+.table-body {
     color: $white;
     align-items: center;
 }
 td {
-    color: $white;
-    text-align: center;
+    @extend .table-body;
     font-size: 1rem;
 } 
 
 @media (min-width: $breakpoint-tablet) {
     .main-sections {
-        width: 70%;
-        margin: 0 auto;
+        @include adjust-content(70%);
+    }
+    .section-table {
+        h2 {
+            font-size: 3rem;
+        }
     }
     .general-section {
         img {
-            margin: 0   auto; 
-            width: 80%; 
+            @include adjust-content(80%);
         }
     }
 }
