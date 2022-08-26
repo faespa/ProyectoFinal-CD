@@ -10,7 +10,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: #333333;
-  background-image: url(/img/bg.jpg) !important;
+  background-image: url(/img/bg-420.jpg) !important;
   background-size: contain;
   font-size: 1.6rem; }
 
@@ -46,12 +46,18 @@ p {
   justify-content: flex-end; }
 
 @media (min-width: 420px) {
+  body {
+    background-image: url(/img/bg-768.jpg) !important; }
   h2 {
     font-size: 4rem; }
   h3 {
     font-size: 3rem; }
   p {
     font-size: 2rem; } }
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/img/bg-1400.jpg) !important; } }
 
 .boton {
   background-color: #ffdead;
@@ -223,7 +229,7 @@ p {
 
 /********* Hero **********/
 .hero {
-  background-image: url(../img/hero.jpg);
+  background-image: url(../img/hero-420.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -383,10 +389,12 @@ p {
 
 @media (min-width: 420px) {
   /* Main */
-  .hero .contenedor-hero h1 {
-    color: #ffff00; }
-  .hero .contenedor-hero h2 {
-    color: #ffdead; }
+  .hero {
+    background-image: url(../img/hero-768.jpg); }
+    .hero .contenedor-hero h1 {
+      color: #ffff00; }
+    .hero .contenedor-hero h2 {
+      color: #ffdead; }
   .section__distribuidores h2 {
     font-size: 2rem; }
   .section__distribuidores div img {
@@ -397,27 +405,29 @@ p {
 
 @media (min-width: 768px) {
   /* Hero */
-  .hero .contenedor-hero {
-    margin: 0;
-    padding: 1rem;
-    position: relative;
-    width: 38rem;
-    height: 16rem;
-    top: 5rem;
-    left: 5rem;
-    border: 0.5rem solid #154B52;
-    outline: 0.2rem solid #ffff00; }
-    .hero .contenedor-hero h1 {
-      font-size: 6rem;
-      font-weight: 500; }
-    .hero .contenedor-hero h2 {
-      padding-top: 2rem;
-      font-size: 2.5rem;
-      text-transform: none;
-      font-weight: 300; }
-      .hero .contenedor-hero h2 span {
-        color: #ff6900;
-        font-weight: bold; }
+  .hero {
+    background-image: url(../img/hero-1200.jpg); }
+    .hero .contenedor-hero {
+      margin: 0;
+      padding: 1rem;
+      position: relative;
+      width: 38rem;
+      height: 16rem;
+      top: 5rem;
+      left: 5rem;
+      border: 0.5rem solid #154B52;
+      outline: 0.2rem solid #ffff00; }
+      .hero .contenedor-hero h1 {
+        font-size: 6rem;
+        font-weight: 500; }
+      .hero .contenedor-hero h2 {
+        padding-top: 2rem;
+        font-size: 2.5rem;
+        text-transform: none;
+        font-weight: 300; }
+        .hero .contenedor-hero h2 span {
+          color: #ff6900;
+          font-weight: bold; }
   /* Services */
   .sec-services {
     width: 95%;

@@ -1,6 +1,6 @@
 /********* Hero **********/
 .hero {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/hero-420.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover; 
@@ -209,6 +209,7 @@
 @media (min-width: $breakpoint-tablet) {
     /* Main */
     .hero {
+        background-image: url(../img/hero-768.jpg);
         .contenedor-hero {
             h1 {
             color: $col_title;
@@ -241,6 +242,7 @@
 @media (min-width: $breakpoint-desktop) {
     /* Hero */
     .hero {
+        background-image: url(../img/hero-1200.jpg);
         .contenedor-hero {
             margin: 0;
             padding: 1rem;
