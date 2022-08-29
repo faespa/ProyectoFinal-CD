@@ -16,12 +16,13 @@
         animation-duration: 2s;
 
         h1 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            text-transform: none;
             color: $white;
             font-family: $font-serif;
-            text-transform: none;
-            font-weight: 500;
-            font-size: 1.7rem;
             padding-left: 2rem;
+            margin: 0;
 
             span{
                 font-weight: 700;

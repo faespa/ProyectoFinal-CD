@@ -1,7 +1,5 @@
-.main-sections {
+.main-sec-services {
     @include adjust-content(90%);
-    h1 {
-    }
     h3 {
         color: $nav_hover;
         padding: 1rem 0;
@@ -10,18 +8,6 @@
         color: $white;
         padding: 1rem 0;
     }
-}
-
-.general-section {
-    padding: 2rem;  
-    @include flex-column-center;
-    img {
-        @include adjust-content(100%);
-    }
-}
-
-/***********Servicios**********/
-.main-sections {
     img {
         width: 100%;
     }
@@ -65,23 +51,19 @@ td {
 } 
 
 @media (min-width: $breakpoint-tablet) {
-    .main-sections {
-        @include adjust-content(70%);
+    .main-sec-services {
+        @include adjust-content(80%);
     }
     .section-table {
         h2 {
             font-size: 3rem;
         }
     }
-    .general-section {
-        img {
-            @include adjust-content(80%);
-        }
-    }
 }
 
 @media (min-width: $breakpoint-desktop) {
+    
     td {
         font-size: 2rem;
     }
-}
+} 

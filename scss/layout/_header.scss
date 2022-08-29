@@ -101,7 +101,11 @@
 @media (min-width: $breakpoint-desktop) {
     .site-header {
         @include flex-row-center;
+        padding-bottom: 0;
         justify-content: space-evenly;
+        .header-redes { 
+            padding-right: 1rem;       
+        }
     }
     .navbar-collapse{
         justify-content: space-evenly;
@@ -111,11 +115,6 @@
         width: 35%;
         a {
             color: map-get($estilos-header, dimension);
-        }
-    }
-    .site-header {
-        .header-redes { 
-            padding-right: 1rem;       
         }
     }
 }

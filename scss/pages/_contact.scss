@@ -4,14 +4,18 @@
     width: 100%;
     margin: 0 auto;
 
-    h1 {
-        padding: 2rem;
-        color: $nav_hover;
-        margin: 0 auto;
-    }
     p {
         color: $white;
         padding: 0 1rem;
+    }
+
+    .location {
+        .map-responsive {
+            iframe {
+                padding: 2rem 0;
+                width: 20rem;
+            }
+        }
     }
 }
 
@@ -70,6 +74,13 @@
 @media (min-width: $breakpoint-tablet) {
     .contacto {
         width: 90%;
+        .location {
+            .map-responsive {
+                iframe {
+                    width: 25rem;
+                }
+            }
+        }
     }
     .main-sections  {
         article {
@@ -80,6 +91,17 @@
     }
 }
 @media (min-width: $breakpoint-desktop) {
+    .contacto {
+        width: 90%;
+        .location {
+            .map-responsive {
+                iframe {
+                    width: 45rem;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
     .contenedor-campos {
         display: grid;
         grid-template-columns: repeat(2,1fr);
