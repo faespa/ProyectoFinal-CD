@@ -1,7 +1,5 @@
 .main-sections {
     @include adjust-content(90%);
-    h1 {
-    }
     h3 {
         color: $nav_hover;
         padding: 1rem 0;
